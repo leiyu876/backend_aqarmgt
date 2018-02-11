@@ -9,7 +9,7 @@
                     <!-- .breadcrumb -->
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12"> 
                         <ol class="breadcrumb">
-                            <li><a class="btn btn-block btn-success" href="create-property.html" style="color: #fff"><span class="btn-label"><i class="fa fa-plus"></i></span>Create New Property</a></li>
+                            <li><a class="btn btn-block btn-success" href="create-property.php" style="color: #fff"><span class="btn-label"><i class="fa fa-plus"></i></span>Create New Property</a></li>
                             <li><a href="#">Manage Properties</a></li>
                             <li class="active">Property List</li>
                         </ol>

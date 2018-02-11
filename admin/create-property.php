@@ -3,11 +3,12 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Service Providers</h4>
+                        <h4 class="page-title">Create New Property</h4>
                     </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <ol class="breadcrumb">
-                            <li class="active"><a href="#">Service Providers</a></li>
+                            <li><a href="#">Properties</a></li>
+                            <li class="active">New Property</li>
                         </ol>
                     </div>
                     <!-- /.col-lg-12 -->
@@ -18,35 +19,49 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="card">
-                                        <a href="add-service.php"><img class="card-img-top" src="../plugins/images/cards/sp1.jpg" alt="Card image cap" width="100%"></a>
+                                        <a href="create-new-building.php"><img class="card-img-top" src="../plugins/images/cards/card-building.jpg" alt="Card image cap" width="100%"></a>
                                         <div class="card-block">
-                                            <h4 class="card-title">Add your skills as a Service</h4>
+                                            <h4 class="card-title">Building</h4>
                                         </div>
-                                   
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Commercial Building</li>
+                                            <li class="list-group-item">Redential Building</li>
+                                            <li class="list-group-item">Parking Building</li>
+                                        </ul>
                                         <div class="card-block" style="text-align: center;">
-                                            <a href="add-service.php" class="btn btn-success"><span class="btn-label"><i class="fa fa-arrow-right"></i></span>Proceed</a>
+                                            <a href="create-new-building.php" class="btn btn-success"><span class="btn-label"><i class="fa fa-arrow-right"></i></span>Proceed</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="card">
-                                        <a href="#"><img class="card-img-top" src="../plugins/images/cards/sp2.jpg" alt="Card image cap" width="100%"></a>
+                                        <a href="#"><img class="card-img-top" src="../plugins/images/cards/card-land.jpg" alt="Card image cap" width="100%"></a>
                                         <div class="card-block">
-                                            <h4 class="card-title">Services</h4>
+                                            <h4 class="card-title">Land</h4>
                                         </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Residential Land</li>
+                                            <li class="list-group-item">Commercial Land</li>
+                                            <li class="list-group-item">Irrigation Land</li>
+                                        </ul>
                                         <div class="card-block" style="text-align: center;">
-                                            <a href="services.php" class="btn btn-success"><span class="btn-label"><i class="fa fa-arrow-right"></i></span>Proceed</a>
+                                            <a href="create-new-land.php" class="btn btn-success"><span class="btn-label"><i class="fa fa-arrow-right"></i></span>Proceed</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="card">
-                                        <a href="#"><img class="card-img-top" src="../plugins/images/cards/sp3.jpg" alt="Card image cap" width="100%"></a>
+                                        <a href="#"><img class="card-img-top" src="../plugins/images/cards/card-unit.jpg" alt="Card image cap" width="100%"></a>
                                         <div class="card-block">
-                                            <h4 class="card-title">Tickets</h4>
+                                            <h4 class="card-title">Unit</h4>
                                         </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Flat</li>
+                                            <li class="list-group-item">Office</li>
+                                            <li class="list-group-item">Shop</li>
+                                        </ul>
                                         <div class="card-block" style="text-align: center;">
-                                            <a href="create-new-shop.php" class="btn btn-success"><span class="btn-label"><i class="fa fa-arrow-right"></i></span>Proceed</a>
+                                            <a href="create-new-unit.php" class="btn btn-success"><span class="btn-label"><i class="fa fa-arrow-right"></i></span>Proceed</a>
                                         </div>
                                     </div>
                                 </div>
@@ -136,4 +151,5 @@
             <!-- /.container-fluid -->
             <footer class="footer text-center"> 2017 &copy; Aqarmgt </footer>
         </div>
+        
 <?php include('inc/script_down.php'); ?>

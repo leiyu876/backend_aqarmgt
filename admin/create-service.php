@@ -4,12 +4,12 @@
                 <div class="row bg-title">
                     <!-- .page title -->
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Services List</h4> </div>
+                        <h4 class="page-title">Service Create</h4> </div>
                     <!-- /.page title -->
                     <!-- .breadcrumb -->
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12"> 
                         <ol class="breadcrumb">
-							<li><a class="btn btn-block btn-success" href="create-service.php" style="color: #fff"><span class="btn-label"><i class="fa fa-plus"></i></span>Create New Service</a></li>
+							
                             <li><a href="#">Manage Services</a></li>
                             <li class="active">Services List</li>
                         </ol>
@@ -17,76 +17,111 @@
                     <!-- /.breadcrumb -->
                 </div>
                 <!-- .row -->                <!-- /.row -->
-                
-                                <div class="row">
-                               
-                                
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="white-box">
-                            <div class="product-img">
-                                <img src="../plugins/images/service1.jpg" />
-                                <div class="pro-img-overlay"><a href="#" class="bg-info"><i class="ti-marker-alt"></i></a> <a href="javascript:void(0)" id="dc" class="bg-danger"><i class="ti-trash"></i></a></div>
-                            </div>
-                            <div class="product-text">
-                                <span class="pro-price bg-danger">SR 150</span>
-                                <h3 class="box-title m-b-0">Gym</h3>
-                                <small class="text-muted db">Service Code: 26498</small>
-                                <small class="text-muted db">Service for: Bulding</small>
+                <!-- .row -->          
+                     <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-info">
+                           
+                            <div class="panel-wrapper collapse in" aria-expanded="true">
+                                <div class="panel-body">
+                                    <form action="#">
+                                        <div class="form-body">
+                                            <h3 class="box-title">About Service</h3>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Service Name</label>
+                                                        <input type="text" id="firstName" class="form-control"> </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Code</label>
+                                                        <input type="text" id="lastName" class="form-control"> </div>
+                                                </div>
+                                                <!--/span-->
+                                            </div>
+                                            <!--/row-->
+                                            <!--/row-->
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Category</label>
+                                                        <select class="form-control" data-placeholder="Choose a Category" tabindex="1">
+                                                            <option value="Category 1">Soft</option>
+                                                            <option value="Category 2">Hard</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Price</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-addon"><i class="">SR</i></div>
+                                                            <input type="text" class="form-control" id="exampleInputuname"> </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                            </div>
+                                            <!--/row-->
+                                            
+                                            <div class="row">
+                                            <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Service for Building/Unit</label>
+                                                        <select class="form-control" data-placeholder="Choose a Category" tabindex="1">
+                                                            <option value="Category 1">Building</option>
+                                                            <option value="Category 2">Unit</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">For which Buildings</label>
+                                                        <select class="selectpicker" multiple data-style="form-control">
+                                        <option>Rashid</option>
+                                        <option>Dahran</option>
+                                        <option>Solutel</option>
+                                    </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label class="control-label">Service Discription</label>
+                                            <div class="row">
+                                                <div class="col-md-12 ">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/row-->
+                                            <div class="row">
+                                             
+                                                <div class="col-md-3">
+                                                    <h3 class="box-title m-t-20">Upload Image</h3>
+                                                    <div class="product-img"> <!--<img src="../plugins/images/chair.jpg">-->
+                                                       
+                                                        <div class="fileupload btn btn-info waves-effect waves-light"><span><i class="ion-upload m-r-5"></i>Upload Image</span>
+                                                            <input type="file" class="upload"> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                            <hr> </div>
+                                        <div class="form-actions m-t-40">
+                                            <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
+                                            <button type="button" class="btn btn-default">Cancel</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                
-                    
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="white-box">
-                            <div class="product-img">
-                                <img src="../plugins/images/service2.png" />
-                                <div class="pro-img-overlay"><a href="#" class="bg-info"><i class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="bg-danger"><i class="ti-trash"></i></a></div>
-                            </div>
-                            <div class="product-text">
-                                <span class="pro-price bg-success">SR 200</span>
-                                <h3 class="box-title m-b-0">Parking</h3>
-                                <small class="text-muted db">Service Code: 29548</small>
-                                <small class="text-muted db">Service for: Building</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="white-box">
-                            <div class="product-img">
-                                <img src="../plugins/images/service3.png" />
-                                <div class="pro-img-overlay"><a href="javascript:void(0)" class="bg-info"><i class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="bg-danger"><i class="ti-trash"></i></a></div>
-                            </div>
-                            <div class="product-text">
-                                <span class="pro-price bg-info">SR 178</span>
-                                <h3 class="box-title m-b-0">Cleaning</h3>
-                                <small class="text-muted db">Service Code: 29549</small>
-                                <small class="text-muted db">Service for: Flat</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="white-box">
-                            <div class="product-img">
-                                <img src="../plugins/images/service4.jpg" />
-                                <div class="pro-img-overlay"><a href="javascript:void(0)" class="bg-info"><i class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="bg-danger"><i class="ti-trash"></i></a></div>
-                            </div>
-                            <div class="product-text">
-                                <span class="pro-price bg-danger">SR 100</span>
-                                <h3 class="box-title m-b-0">Football Court</h3>
-                                <small class="text-muted db">Service Code: 29595</small>
-                                <small class="text-muted db">Service for: Building</small>
-                            </div>
-                        </div>
-                    </div>
-                   
-                   
-                 
-                   
-                    
-                    
                 </div>
-                <!-- .row -->                <!-- /.row -->
+                
+                      <!-- /.row -->
                 <!-- .row -->
                 <div class="row">
                     <div class="col-md-12 text-center">

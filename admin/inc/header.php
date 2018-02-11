@@ -31,7 +31,7 @@
                     <li><a href="javascript:void(0)"><i class="ti-user"></i>  My Profile</a></li>
                     <li><a href="javascript:void(0)"><i class="ti-email"></i>  Inbox</a></li>
                     <li><a href="javascript:void(0)"><i class="ti-settings"></i>  Account Setting</a></li>
-                    <li><a href="login.html"><i class="fa fa-power-off"></i>  Logout</a></li>
+                    <li><a href="login2.html"><i class="fa fa-power-off"></i>  Logout</a></li>
                 </ul>
                 <!-- /.dropdown-user -->
             </li>
