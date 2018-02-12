@@ -1,6 +1,5 @@
 /*------------------ Style tabs ------------------*/
 
-@import "variables.less";
 .sttabs {
     position: relative;
     overflow: hidden;
@@ -909,7 +908,7 @@
 .mytooltip {
     display: inline;
     position: relative;
-    z-index: 9999;
+    z-index: 1;
 }
 
 
@@ -1402,11 +1401,6 @@ a.mytooltip {
         width: 400px;
     }
 }
-
-
-/*--------------------------------------------------------------
-  Update 1.5
---------------------------------------------------------------*/
 
 
 /********* Search Result Page**********/
@@ -2259,21 +2253,15 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
     top: 0;
 }
 
-
 /* Update 2.5 */
 
-.table.dataTable,
-table.dataTable {
-    width: 99.80%!important;
+.table.dataTable, table.dataTable {
+    width: 99.80% !important;
 }
-
-table.dataTable thead .sorting_asc::after,
-table.dataTable thead .sorting::after,
-table.dataTable thead .sorting_desc::after {
+table.dataTable thead .sorting_asc::after, table.dataTable thead .sorting::after, table.dataTable thead .sorting_desc::after {
     float: none;
     padding-left: 10px;
 }
-
 
 /* style for realestate pages */
 
@@ -2348,15 +2336,6 @@ table.dataTable thead .sorting_desc::after {
     position: absolute;
     top: 30px;
     right: 30px;
-}
-
-.pro-horizontal,
-.pro-content {
-    display: flex;
-}
-
-.pro-content {
-    flex-wrap: wrap;
 }
 
 .pro-box.pro-horizontal pro-content {
@@ -2507,44 +2486,27 @@ ul.pro-amenities li span i {
 .pro-add-form .checkbox label {
     font-weight: 100;
 }
-
-
-/* for Plugins section */
-
-.plugin-details {
-    display: none;
-}
-
-.plugin-details-active {
-    display: block;
-}
-
-
 /*Register in steps*/
-
-.register-box {
+.register-box{
     max-width: 600px;
-    margin: 0 auto;
+    margin:0 auto;
     padding-top: 2%;
 }
-
-.step-register {
+.step-register{
     position: absolute;
     height: 100%;
+   
 }
 
 #sortable_panels .panel-heading {
     cursor: move;
 }
 
-
 /* VERSION 3.1 */
-
 
 /* for icheck controls */
 
-.icolors,
-.icheck-list {
+.icolors, .icheck-list {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -2565,6 +2527,7 @@ ul.pro-amenities li span i {
     content: "\2713 ";
     color: @white;
     line-height: 30px;
+
 }
 
 .icolors>li:first-child {
@@ -2621,7 +2584,7 @@ ul.pro-amenities li span i {
 }
 
 .default-steps .column-step.active {
-    background: @info;
+    background: @info;   
 }
 
 .default-steps .step-number,
@@ -2659,7 +2622,7 @@ ul.pro-amenities li span i {
 }
 
 .thin-steps .column-step.active {
-    background: @danger;
+    background: @danger;   
 }
 
 .thin-steps .step-number,
@@ -2785,12 +2748,12 @@ ul.pro-amenities li span i {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    height: 160px;
+    height:160px;
     background: @bodycolor;
 }
 
 .numbered-bg .column-step.active {
-    background: @info;
+    background: @info;   
 }
 
 .numbered-bg .step-number,
@@ -2832,7 +2795,7 @@ ul.pro-amenities li span i {
 }
 
 .thin-steps-numbered-bg .column-step.active {
-    background: @info;
+    background: @info;   
 }
 
 .thin-steps-numbered-bg .step-number,
@@ -2941,7 +2904,7 @@ ul.pro-amenities li span i {
     webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
     -o-transform: scale(1.3);
-    transform: scale(1.3);
+    transform: scale(1.3); 
 }
 
 .line-steps .active .step-title,
@@ -3116,8 +3079,7 @@ ul.pro-amenities li span i {
     content: '';
     border: 30px solid transparent;
     border-top-color: @themecolor;
-    border-left-color: @themecolor;
-    ;
+    border-left-color: @themecolor;;    
 }
 
 .ribbon-corner.ribbon-right:before {
@@ -3371,9 +3333,7 @@ ul.pro-amenities li span i {
     border-bottom-color: @dark;
 }
 
-
 /* PLUGIN CSS OVERRIGHT */
-
 
 /* bootstrap-switch */
 
@@ -3392,42 +3352,35 @@ ul.pro-amenities li span i {
     border-top-right-radius: 2px;
 }
 
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary,
-.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
     color: @white;
     background: @primary;
 }
 
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info,
-.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info {
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info {
     color: @white;
     background: @info;
 }
 
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success,
-.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success {
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success {
     color: @white;
     background: @success;
 }
 
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning,
-.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning {
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning {
     color: @white;
     background: @warning;
 }
 
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger,
-.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger {
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger {
     color: @white;
     background: @danger;
 }
 
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default,
-.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default {
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default {
     color: @dark;
     background: @light;
 }
-
 
 /* lobipanel */
 
@@ -3444,8 +3397,7 @@ ul.pro-amenities li span i {
     box-shadow: none!important;
 }
 
-.lobipanel .panel-heading .dropdown .dropdown-menu>li>a:focus:hover,
-.lobipanel .panel-heading .dropdown .dropdown-menu>li>a:hover {
+.lobipanel .panel-heading .dropdown .dropdown-menu>li>a:focus:hover, .lobipanel .panel-heading .dropdown .dropdown-menu>li>a:hover {
     background: none;
     text-shadow: none;
     opacity: 0.6;
@@ -3456,7 +3408,6 @@ ul.pro-amenities li span i {
     opacity: 0.1;
     border: 1px dashed @dark;
 }
-
 
 /* date-paginator */
 
@@ -3470,7 +3421,7 @@ ul.pro-amenities li span i {
     font-family: @basefont1;
     text-align: center;
     font-size: 20px;
-}
+ }
 
 .grid-stack-item-content .fa {
     font-size: 64px;

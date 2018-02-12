@@ -1,13 +1,10 @@
 @import "variables.less";
-
-/******************* Global Styles *******************/
-
-********** {
+// Global Styles
+* {
     outline: none !important;
 }
 
 body {
-    background: @sidebar;
     font-family: @basefont1;
     margin: 0;
     overflow-x: hidden;
@@ -144,10 +141,6 @@ hr {
     overflow: auto;
 }
 
-.t-a-c {
-    text-align: center !important;
-}
-
 .p-0 {
     padding: 0px !important;
 }
@@ -214,10 +207,6 @@ hr {
 
 .p-b-0 {
     padding-bottom: 0px !important;
-}
-
-.p-b-5 {
-    padding-bottom: 5px !important;
 }
 
 .p-b-10 {
@@ -421,12 +410,12 @@ hr {
 }
 
 
-/********** Badge **********/
+/* Badge */
 
 .badge {
     text-transform: uppercase;
     font-weight: 600;
-    padding: 4px 5px 2px;
+    padding: 3px 5px;
     font-size: 12px;
     margin-top: 1px;
     background-color: @warning;
@@ -473,7 +462,7 @@ hr {
 }
 
 
-/**********notify**********/
+/*notify*/
 
 .notify {
     position: relative;
@@ -555,7 +544,7 @@ hr {
 }
 
 
-/********** Text colors **********/
+/* Text colors */
 
 .text-white {
     color: @white !important;
@@ -606,100 +595,7 @@ hr {
 }
 
 
-/********** Card Background colors **********/
-
-.card-primary {
-    background-color: @primary;
-    border-color: @primary;
-}
-
-.card-success {
-    background-color: @success;
-    border-color: @success;
-}
-
-.card-info {
-    background-color: @info;
-    border-color: @info;
-}
-
-.card-warning {
-    background-color: @warning;
-    border-color: @warning;
-}
-
-.card-danger {
-    background-color: @danger;
-    border-color: @danger;
-}
-
-.card-secondary {
-    background-color: @inverse;
-    border-color: @inverse;
-}
-
-.card-red {
-    background-color: @red;
-    border-color: @red;
-}
-
-.card-blue {
-    background-color: @blue;
-    border-color: @blue;
-}
-
-.card-purple {
-    background-color: @purple;
-    border-color: @purple;
-}
-
-.card-megna {
-    background-color: @megna;
-    border-color: @megna;
-}
-
-.card-outline-primary {
-    border-color: @primary;
-}
-
-.card-outline-success {
-    border-color: @success;
-}
-
-.card-outline-info {
-    border-color: @info;
-}
-
-.card-outline-warning {
-    border-color: @warning;
-}
-
-.card-outline-danger {
-    border-color: @danger;
-}
-
-.card-outline-secondary {
-    border-color: @inverse;
-}
-
-.card-outline-red {
-    border-color: @red;
-}
-
-.card-outline-blue {
-    border-color: @blue;
-}
-
-.card-outline-purple {
-    border-color: @purple;
-}
-
-.card-outline-megna {
-    border-color: @megna;
-}
-
-
-/********** Background colors **********/
+/* Background colors */
 
 .bg-primary {
     background-color: @primary !important;
@@ -742,7 +638,7 @@ hr {
 }
 
 
-/********** Labels **********/
+/* Labels */
 
 .label {
     letter-spacing: 0.05em;
@@ -798,16 +694,16 @@ hr {
     background-color: @inverse;
 }
 
-.label-default {
-    background-color: @light;
-}
-
 .label-white {
     background-color: @white;
 }
 
+.label-default {
+    background-color: @light;
+}
 
-/**********Bootstrap overight**********/
+
+/*Bootstrap overight*/
 
 .dropdown-menu {
     border: 1px solid @border;
@@ -967,7 +863,7 @@ pre {
     span {
         position: absolute;
         top: 50%;
-        /********** pushes the icon in the middle of the height **********/
+        /* pushes the icon in the middle of the height */
         z-index: 5;
         display: inline-block;
         font-size: 30px;
@@ -1055,7 +951,7 @@ pre {
 }
 
 
-/********** Pagination/ Pager **********/
+/* Pagination/ Pager */
 
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
@@ -1115,7 +1011,7 @@ pre {
     color: @dark;
 }
 
-//---------------------- table-cell
+// table-cell
 .table-box {
     display: table;
     width: 100%;
@@ -1131,10 +1027,12 @@ pre {
     height: auto !important;
 }
 
-//---------------------- text-align
-//---------------------- Wrappers
+// text-align
+// Wrappers
 #wrapper {
     width: 100%;
+    margin: 0 auto;
+    box-shadow: 1px 0px 50px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
@@ -1151,13 +1049,15 @@ pre {
     left: 0px;
     padding: 20px 30px;
     position: absolute;
+    width: 100%;
+    margin: 0 auto;
     right: 0;
     background: @white;
 }
 
-//---------------------- Page title
+// Page title
 .bg-title {
-    background: @white;
+    border-bottom: 1px solid @light;
     overflow: hidden;
     padding: 15px 15px 10px;
     margin-bottom: 25px;
@@ -1186,10 +1086,10 @@ pre {
     }
 }
 
-//---------------------- Navigation
-//---------------------- --Topbar
+// Navigation
+// --Topbar
 .logo b {
-    /**********background:@themecolor;**********/
+    /*background:@themecolor;*/
     height: 60px;
     display: inline-block;
     width: 60px;
@@ -1208,6 +1108,7 @@ pre {
         color: @white;
         font-size: 18px;
         padding-left: 0px;
+        text-transform: uppercase;
     }
 }
 
@@ -1306,9 +1207,9 @@ pre {
     }
 }
 
-//---------------------- Search
+// Search
 
-/**********Search**********/
+/*Search*/
 
 .app-search {
     position: relative;
@@ -1366,6 +1267,7 @@ pre {
     padding: 12px 15px !important;
     pointer-events: none;
     margin: 20px 0 0 -15px;
+    display: none!important;
 }
 
 .profile-pic {
@@ -1384,7 +1286,7 @@ pre {
     padding: 11px 20px 15px;
 }
 
-//---------------------- Buttons
+// Buttons
 .btn-outline {
     color: inherit;
     background-color: transparent;
@@ -1726,7 +1628,7 @@ pre {
     color: @white;
 }
 
-//---------------------- Chat Widget
+// Chat Widget
 .chat {
     margin: 0;
     padding: 0;
@@ -1761,12 +1663,12 @@ pre {
     overflow-y: scroll;
 }
 
-//---------------------- Login Page
+// Login Page
 .login-panel {
     margin-top: 25%;
 }
 
-//---------------------- Flot Charts Containers
+// Flot Charts Containers
 .flot-chart {
     display: block;
     height: 400px;
@@ -1777,7 +1679,7 @@ pre {
     height: 100%;
 }
 
-//---------------------- DataTables Overrides
+// DataTables Overrides
 table.dataTable thead .sorting,
 table.dataTable thead .sorting_asc,
 table.dataTable thead .sorting_desc,
@@ -1805,7 +1707,7 @@ table.dataTable thead .sorting:after {
     color: rgba(50, 50, 50, .5);
 }
 
-//---------------------- Circle Buttons 
+// Circle Buttons 
 .btn-circle {
     width: 30px;
     height: 30px;
@@ -1834,7 +1736,7 @@ table.dataTable thead .sorting:after {
     line-height: 1.33;
 }
 
-//---------------------- Grid Demo Elements
+// Grid Demo Elements
 .show-grid [class^="col-"] {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -2248,14 +2150,8 @@ table.dataTable thead .sorting:after {
     }
 }
 
-.fa-fw {
-    width: 20px!important;
-    display: inline-block !important;
-    text-align: left !important;
-}
 
-
-/**********Wave Effeects**********/
+/*Wave Effeects*/
 
 .waves-transition (@transition) {
     -webkit-transition: @transition;
@@ -2403,9 +2299,9 @@ table.dataTable thead .sorting:after {
 }
 
 
-/********** =============
+/* =============
    Checkbox and Radios
-============= **********/
+============= */
 
 .checkbox {
     padding-left: 20px;
@@ -2588,7 +2484,7 @@ table.dataTable thead .sorting:after {
 }
 
 
-/********** Radios **********/
+/* Radios */
 
 .radio {
     padding-left: 20px;
@@ -2788,7 +2684,7 @@ table.dataTable thead .sorting:after {
 }
 
 
-/********** File Upload **********/
+/* File Upload */
 
 .fileupload {
     overflow: hidden;
@@ -2807,16 +2703,16 @@ table.dataTable thead .sorting:after {
 }
 
 
-/***********
+/**
 Models
-***********/
+**/
 
 .model_img {
     cursor: pointer;
 }
 
 
-/**********Nestable**********/
+/*Nestable*/
 
 .myadmin-dd {
     .dd-list {
@@ -2879,7 +2775,7 @@ Models
 }
 
 
-/**********Setting box**********/
+/*Setting box*/
 
 .settings_box {
     position: absolute;
@@ -2971,7 +2867,7 @@ Models
 }
 
 
-/**********Common Ul**********/
+/*Common Ul*/
 
 ul.common li {
     display: inline-block;
@@ -2984,4 +2880,97 @@ ul.common li {
             color: @info;
         }
     }
+}
+
+
+/********** Card Background colors **********/
+
+.card-primary {
+    background-color: @primary;
+    border-color: @primary;
+}
+
+.card-success {
+    background-color: @success;
+    border-color: @success;
+}
+
+.card-info {
+    background-color: @info;
+    border-color: @info;
+}
+
+.card-warning {
+    background-color: @warning;
+    border-color: @warning;
+}
+
+.card-danger {
+    background-color: @danger;
+    border-color: @danger;
+}
+
+.card-secondary {
+    background-color: @inverse;
+    border-color: @inverse;
+}
+
+.card-red {
+    background-color: @red;
+    border-color: @red;
+}
+
+.card-blue {
+    background-color: @blue;
+    border-color: @blue;
+}
+
+.card-purple {
+    background-color: @purple;
+    border-color: @purple;
+}
+
+.card-megna {
+    background-color: @megna;
+    border-color: @megna;
+}
+
+.card-outline-primary {
+    border-color: @primary;
+}
+
+.card-outline-success {
+    border-color: @success;
+}
+
+.card-outline-info {
+    border-color: @info;
+}
+
+.card-outline-warning {
+    border-color: @warning;
+}
+
+.card-outline-danger {
+    border-color: @danger;
+}
+
+.card-outline-secondary {
+    border-color: @inverse;
+}
+
+.card-outline-red {
+    border-color: @red;
+}
+
+.card-outline-blue {
+    border-color: @blue;
+}
+
+.card-outline-purple {
+    border-color: @purple;
+}
+
+.card-outline-megna {
+    border-color: @megna;
 }
