@@ -1,1 +1,1 @@
-<footer class="footer text-center"> 2017 &copy; Aqarmgtt </footer>
+<footer class="footer text-center"> 2018 &copy; Aqarmgtt </footer>
