@@ -22,6 +22,7 @@ Route::get('/login', function () {
 Route::get('/property', 'PropertyController@index');
 
 Route::get('/dbcheck', function() {
+	//a
 	try {
 	    DB::connection()->getPdo();
 	    die('Database Connected!');
